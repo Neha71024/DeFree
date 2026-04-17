@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 import EventTicketNFTABI from "../artifacts/contracts/EventTicketNFT.sol/EventTicketNFT.json"; // ✅ correct ABI
-const contractAddress = "0x8f7B988e984B5d32744bC5FDbB901503C416F0D8"; // ✅ your deployed contract
+const contractAddress = "0x4aA5b5330766774f179433B47a76b6f5526BA1B5"; // ✅ your deployed contract
 
 export const mintTicket = async (tokenURI: string) => {
 if (!window.ethereum) throw new Error("MetaMask not found");
