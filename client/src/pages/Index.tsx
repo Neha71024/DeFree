@@ -35,21 +35,21 @@ const Index = () => {
       title: "Freelance Marketplace",
       description:
         "Connect with top talent and discover amazing projects in the tech space.",
-      link: "/freelance",
+      link: "/login",
     },
     {
       icon: Calendar,
       title: "Tech Events",
       description:
         "Join conferences, workshops, and networking events in your area.",
-      link: "/events",
+      link: "/login",
     },
     {
       icon: Users,
       title: "Community Chat",
       description:
         "Real-time collaboration with developers, designers, and entrepreneurs.",
-      link: "/community",
+      link: "/login",
     },
   ];
 
@@ -220,17 +220,17 @@ const Index = () => {
               <Button
                 size="lg"
                 className="glow-button text-lg px-8 py-3"
-                asChild
+                onClick={() => navigate('/login')}
               >
-                <Link to="/freelance">Explore Gigs</Link>
+                Explore Gigs
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="glass-effect text-lg px-8 py-3"
-                asChild
+                onClick={() => navigate('/login')}
               >
-                <Link to="/events">Join Events</Link>
+                Join Events
               </Button>
             </div>
           </div>
@@ -342,7 +342,7 @@ const Index = () => {
               </p>
             </div>
             <Button variant="outline" asChild>
-              <Link to="/freelance">View All</Link>
+              <Link to="/login">View All</Link>
             </Button>
           </div>
 
@@ -414,7 +414,7 @@ const Index = () => {
               </p>
             </div>
             <Button variant="outline" asChild>
-              <Link to="/events">View All</Link>
+              <Link to="/login">View All</Link>
             </Button>
           </div>
 
